@@ -133,12 +133,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         dataSet.setDrawCubic(true);  //设置曲线为圆滑的线
         dataSet.setCubicIntensity(0.2f);
-        dataSet.setDrawFilled(false);  //设置包括的范围区域填充颜色
+        dataSet.setDrawFilled(true);  //设置包括的范围区域填充颜色
         dataSet.setDrawCircles(true);  //设置有圆点
         dataSet.setLineWidth(2f);    //设置线的宽度
         dataSet.setCircleSize(5f);   //设置小圆的大小
         dataSet.setHighLightColor(Color.rgb(244, 117, 117));
         dataSet.setColor(Color.rgb(104, 241, 175));    //设置曲线的颜色
+        dataSet.setFillColor(Color.GREEN);
 
         // create a data object with the datasets
         LineData data = new LineData(xVals, dataSet);
